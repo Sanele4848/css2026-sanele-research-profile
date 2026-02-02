@@ -16,13 +16,13 @@ st.title("Research Profile")
 st.markdown("### About")
 
 st.write("""
-I apply machine learning to operational prediction problems using historical data. My approach emphasizes 
-systematic model comparison (testing multiple algorithms rather than choosing one upfront), proper validation 
-that prevents overfitting, and building deployable systems rather than stopping at model training.
+I work on prediction problems using machine learning. My approach is to test multiple models instead 
+of picking one upfront, use proper validation splits so the model doesn't just memorize the training 
+data, and actually deploy what I build rather than leaving it as a notebook.
 
-My undergraduate work focused on aviation delay prediction using ensemble methods. I am now transitioning 
-to postgraduate research in mining applications of machine learning, where I plan to apply similar 
-methodological rigor to mining-specific forecasting and optimization problems.
+My undergraduate project was on flight delay prediction using ensemble methods. I'm moving into 
+postgraduate work focused on mining applications, where I want to use the same approach on 
+mining-specific problems.
 """)
 
 st.markdown("---")
@@ -56,9 +56,9 @@ st.markdown("---")
 st.markdown("### Undergraduate Research: Flight Delay Prediction")
 
 st.write("""
-For my final year undergraduate project, I built a machine learning system to predict flight delay 
-rates using 10 years of U.S. airline data (132,695 observations covering 51.4 million flights across 
-21 carriers and 389 airports).
+My final year project predicted flight delay rates using U.S. airline data from 2013-2023. The dataset 
+had 132,695 records covering 51.4 million flights across 21 airlines and 389 airports. I removed 
+2020-2021 (COVID years) because those patterns weren't representative.
 """)
 
 col1, col2, col3, col4 = st.columns(4)
@@ -70,20 +70,19 @@ col4.metric("Features", "36 engineered")
 st.markdown("**Methodology**")
 
 st.write("""
-**Data Preprocessing**: Excluded COVID years (2020-2021) to avoid anomalous patterns. Used temporal 
-train-test split (2013-2018 train, 2019 validation, 2022-2023 test) to prevent data leakage. Applied 
-log transformations to skewed variables and capped extreme outliers at 99th percentile.
+**Data prep**: Removed COVID years. Split data by time (trained on 2013-2018, validated on 2019, 
+tested on 2022-2023) instead of random split to avoid cheating. Log-transformed skewed variables 
+and capped extreme outliers.
 
-**Feature Engineering**: Created 36 features including cyclical time encodings, historical performance 
-metrics, operational stress indicators, and delay cause breakdowns. Top 3 features accounted for 92% 
-of model importance: seasonal_delay_rate (40%), arr_flights_log (31%), arr_del15_log (20%).
+**Features**: Made 36 features including time patterns, historical averages, and operational stress 
+indicators. The top 3 features did most of the work: past delay rate for that specific route and month 
+(40% importance), number of flights (31%), and historical delay count (20%).
 
-**Model Comparison**: Tested six algorithms (Ridge Regression, Decision Tree, Random Forest, KNN, 
-Extra Trees, Gradient Boosting). Random Forest achieved best validation performance (MAE: 0.0166, 
-R²: 0.926) with strong test set generalization (MAE: 0.0212, R²: 0.889).
+**Models**: Tested Ridge Regression, Decision Tree, Random Forest, KNN, Extra Trees, and Gradient Boosting. 
+Random Forest won (validation MAE: 0.0166, R²: 0.926). On the test set it got MAE of 0.0212 and R² of 0.889.
 
-**Deployment**: Built Streamlit web app providing real-time delay predictions with risk classification 
-and seasonal analysis. Live at [flightcast.streamlit.app](https://flightcast.streamlit.app/)
+**Deployment**: Built a Streamlit app that gives delay predictions. It's live at 
+[flightcast.streamlit.app](https://flightcast.streamlit.app/)
 """)
 
 st.markdown("**Key Findings**")
@@ -97,14 +96,15 @@ model_comparison = pd.DataFrame({
 st.dataframe(model_comparison, hide_index=True, use_container_width=True)
 
 st.write("""
-**Domain Insights**: June-July show worst delays (23.7% and 23.0% vs 19.3% baseline). September 
-performs best (15.2%). Delta Airlines leads in reliability (14.4% delays) while Frontier shows 
-worst performance (25.6% delays) - a 78% relative difference. 72% of delays stem from airline-controlled 
-factors (carrier operations + late aircraft cascades) rather than external causes.
+June-July had the worst delays (23.7% and 23.0% vs baseline of 19.3%). September was best (15.2%). 
+Delta was the most reliable airline (14.4% delays) and Frontier was worst (25.6%) - that's a 78% 
+difference. 
 
-**Model Behavior**: Prediction accuracy degrades with operational scale (major hubs: 4.4pp error vs 
-small airports: 0.9pp error). Model systematically underestimates extreme delays (predicts 38% for 
-routes with actual 44% delays), indicating conservative bias in worst-case scenarios.
+72% of delays came from things airlines control (their own operations plus knock-on effects from 
+earlier delays) rather than weather or external factors.
+
+The model worked better on small airports (0.9pp error) than major hubs (4.4pp error). It also 
+underestimated really bad delays - when actual delays were 44%, it predicted 38%.
 """)
 
 st.markdown("---")
@@ -112,17 +112,16 @@ st.markdown("---")
 st.markdown("### Research Interests")
 
 st.write("""
-I'm interested in applying machine learning to mining operations, with potential focus areas including:
+I'm interested in ML for mining operations. Some areas I'm considering:
 
-- Predictive maintenance for mining equipment using sensor data
-- Ore grade prediction and resource estimation
-- Production optimization and scheduling
-- Safety risk prediction from operational indicators
-- Equipment failure forecasting
-- Blast optimization using historical performance data
+- Predicting equipment failures before they happen
+- Estimating ore grades
+- Optimizing production schedules
+- Predicting safety risks
+- Using blast data to improve future blasts
 
-My methodological interests include systematic model comparison, temporal validation strategies, 
-feature engineering for operational data, and production deployment of predictive systems.
+In terms of approach, I care about testing multiple models properly, using time-based validation 
+when working with time series data, and building things that can actually be used.
 """)
 
 st.markdown("---")
@@ -130,9 +129,9 @@ st.markdown("---")
 st.markdown("### Contact")
 
 st.write("""
-I am currently seeking postgraduate research opportunities in machine learning applications to mining. 
-I'm particularly interested in programs or supervisors working on operational prediction problems 
-in mining where rigorous model evaluation and practical deployment are priorities.
+I'm looking for postgraduate research opportunities in ML applications to mining. Interested in 
+working with people who focus on practical prediction problems where you test models properly 
+and build systems that work.
 
 Email: smabuza782@gmail.com  
 Location: Pietermaritzburg, South Africa
