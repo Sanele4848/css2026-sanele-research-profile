@@ -5,7 +5,7 @@ st.set_page_config(page_title="Sanele Mabuza | Research Profile", layout="wide")
 
 with st.sidebar:
     st.title("Sanele Mabuza")
-    st.write("Machine Learning Researcher")
+    st.write("Aspiring Researcher")
     st.markdown("---")
     st.write("smabuza782@gmail.com")
     st.write("Pietermaritzburg, South Africa")
@@ -16,12 +16,13 @@ st.title("Research Profile")
 st.markdown("### About")
 
 st.write("""
-I build machine learning systems that predict operational outcomes using historical data. My work 
-focuses on comparative model evaluation rather than defaulting to single algorithms, rigorous 
-validation protocols that prevent overfitting, and deploying working applications that people can use.
+I apply machine learning to operational prediction problems using historical data. My approach emphasizes 
+systematic model comparison (testing multiple algorithms rather than choosing one upfront), proper validation 
+that prevents overfitting, and building deployable systems rather than stopping at model training.
 
-Current research applies ensemble methods to aviation delay prediction, with emphasis on temporal 
-feature engineering and handling imbalanced operational datasets.
+My undergraduate work focused on aviation delay prediction using ensemble methods. I am now transitioning 
+to postgraduate research in mining applications of machine learning, where I plan to apply similar 
+methodological rigor to mining-specific forecasting and optimization problems.
 """)
 
 st.markdown("---")
@@ -52,11 +53,12 @@ with col2:
 
 st.markdown("---")
 
-st.markdown("### Research: Flight Delay Prediction")
+st.markdown("### Undergraduate Research: Flight Delay Prediction")
 
 st.write("""
-Built a machine learning system to predict flight delay rates using 10 years of U.S. airline data 
-(132,695 observations covering 51.4 million flights across 21 carriers and 389 airports).
+For my final year undergraduate project, I built a machine learning system to predict flight delay 
+rates using 10 years of U.S. airline data (132,695 observations covering 51.4 million flights across 
+21 carriers and 389 airports).
 """)
 
 col1, col2, col3, col4 = st.columns(4)
@@ -110,25 +112,28 @@ st.markdown("---")
 st.markdown("### Research Interests")
 
 st.write("""
-- Predictive modeling on operational time-series data
-- Systematic comparison of ensemble methods for regression
-- Feature engineering strategies for domain-specific problems
-- Temporal validation protocols that prevent data leakage
-- Production deployment of ML systems for decision support
+I'm interested in applying machine learning to mining operations, with potential focus areas including:
+
+- Predictive maintenance for mining equipment using sensor data
+- Ore grade prediction and resource estimation
+- Production optimization and scheduling
+- Safety risk prediction from operational indicators
+- Equipment failure forecasting
+- Blast optimization using historical performance data
+
+My methodological interests include systematic model comparison, temporal validation strategies, 
+feature engineering for operational data, and production deployment of predictive systems.
 """)
 
 st.markdown("---")
 
-st.markdown("### Future Directions")
+st.markdown("### Contact")
 
 st.write("""
-**Next steps for current work**: Add uncertainty quantification through prediction intervals, implement 
-incremental learning for model updates, evaluate simpler models using only top historical features.
+I am currently seeking postgraduate research opportunities in machine learning applications to mining. 
+I'm particularly interested in programs or supervisors working on operational prediction problems 
+in mining where rigorous model evaluation and practical deployment are priorities.
 
-**New research areas**: Flight-level prediction using departure time and real-time weather, causal 
-inference to distinguish correlation from causation in delay propagation, deep learning for complex 
-temporal dependencies, multi-output modeling for simultaneous delay/cancellation prediction.
-
-I'm seeking postgraduate opportunities in machine learning and data science with focus on operational 
-forecasting, ensemble methods, and production ML systems.
+Email: smabuza782@gmail.com  
+Location: Pietermaritzburg, South Africa
 """)
