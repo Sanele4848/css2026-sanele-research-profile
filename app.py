@@ -20,8 +20,9 @@ I work on prediction problems using machine learning. My approach is to test mul
 of picking one upfront, use proper validation splits so the model doesn't just memorize the training 
 data, and actually deploy what I build rather than leaving it as a notebook.
 
-My undergraduate project was on flight delay prediction using ensemble methods. I'm looking at 
-postgraduate study in mining applications, where I want to apply the same approach to mining problems.
+For postgraduate study I want to focus on mining applications of machine learning. My undergraduate 
+project was on flight delay prediction using ensemble methods, and I want to apply the same approach 
+to mining problems.
 """)
 
 st.markdown("---")
@@ -121,17 +122,4 @@ I'm interested in ML for mining operations. Some areas I'm considering:
 
 In terms of approach, I care about testing multiple models properly, using time-based validation 
 when working with time series data, and building things that can actually be used.
-""")
-
-st.markdown("---")
-
-st.markdown("### Contact")
-
-st.write("""
-I'm looking for postgraduate study opportunities in ML applications to mining. Interested in 
-working with people who focus on practical prediction problems where you test models properly 
-and build systems that work.
-
-Email: smabuza782@gmail.com  
-Location: Pietermaritzburg, South Africa
 """)
