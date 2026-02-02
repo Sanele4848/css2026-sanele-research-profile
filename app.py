@@ -54,7 +54,6 @@ st.divider()
 st.header("Featured work")
 
 st.subheader("Flight Delay Predictor (Machine Learning project)")
-st.write("Project mark: 90%")
 st.write("""
 This project predicts flight delay rates from historical flight data.
 I compared multiple models and selected the best one based on results.
@@ -83,3 +82,4 @@ I want to grow this work further in postgraduate studies.
 My long-term interest is applying data science to South African industries, especially mining.
 I am interested in safety, monitoring, and early warning systems using data and AI.
 """)
+
