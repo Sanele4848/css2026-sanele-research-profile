@@ -8,7 +8,6 @@ This is my Streamlit profile page for CSS 2026.
 - Skills and interests (postgraduate focus)
 
 ## Live app
-Add your public Streamlit link here after you deploy:
 - https://css2026-sanele-research-profile.streamlit.app
 
 ## How to run it locally
