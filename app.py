@@ -5,13 +5,13 @@ st.set_page_config(page_title="Sanele Mabuza | Research Profile", layout="wide")
 
 with st.sidebar:
     st.title("Sanele Mabuza")
-    st.write("Aspiring Researcher")
+    st.write("ML Practitioner")
     st.markdown("---")
     st.write("smabuza782@gmail.com")
     st.write("Pietermaritzburg, South Africa")
     st.write("[LinkedIn](https://www.linkedin.com/in/sanele-mabuza-a04742225/)")
 
-st.title("Research Profile")
+st.title("Profile")
 
 st.markdown("### About")
 
@@ -20,9 +20,8 @@ I work on prediction problems using machine learning. My approach is to test mul
 of picking one upfront, use proper validation splits so the model doesn't just memorize the training 
 data, and actually deploy what I build rather than leaving it as a notebook.
 
-My undergraduate project was on flight delay prediction using ensemble methods. I'm moving into 
-postgraduate work focused on mining applications, where I want to use the same approach on 
-mining-specific problems.
+My undergraduate project was on flight delay prediction using ensemble methods. I'm looking at 
+postgraduate study in mining applications, where I want to apply the same approach to mining problems.
 """)
 
 st.markdown("---")
@@ -53,7 +52,7 @@ with col2:
 
 st.markdown("---")
 
-st.markdown("### Undergraduate Research: Flight Delay Prediction")
+st.markdown("### Final Year Project: Flight Delay Prediction")
 
 st.write("""
 My final year project predicted flight delay rates using U.S. airline data from 2013-2023. The dataset 
@@ -109,7 +108,7 @@ underestimated really bad delays - when actual delays were 44%, it predicted 38%
 
 st.markdown("---")
 
-st.markdown("### Research Interests")
+st.markdown("### Interests")
 
 st.write("""
 I'm interested in ML for mining operations. Some areas I'm considering:
@@ -129,7 +128,7 @@ st.markdown("---")
 st.markdown("### Contact")
 
 st.write("""
-I'm looking for postgraduate research opportunities in ML applications to mining. Interested in 
+I'm looking for postgraduate study opportunities in ML applications to mining. Interested in 
 working with people who focus on practical prediction problems where you test models properly 
 and build systems that work.
 
