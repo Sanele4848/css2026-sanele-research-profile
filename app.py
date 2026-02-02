@@ -17,8 +17,8 @@ st.markdown("### About")
 
 st.write("""
 I work on machine learning applications with a focus on prediction problems. My undergraduate project involved flight delay prediction using ensemble methods, which developed my skills in model validation and deployment.
-I'm pursuing postgraduate study to apply machine learning techniques to the mining sector, where I see significant opportunities for predictive modeling in areas such as resource exploration and operational optimization.
-""")
+
+I'm interested in postgraduate study to apply machine learning techniques to the mining sector, where I see significant opportunities for predictive modeling in areas such as resource exploration and operational optimization.""")
 
 st.markdown("---")
 
@@ -118,4 +118,5 @@ I'm interested in ML for mining operations. Some areas I'm considering:
 In terms of approach, I care about testing multiple models properly, using time-based validation 
 when working with time series data, and building things that can actually be used.
 """)
+
 
