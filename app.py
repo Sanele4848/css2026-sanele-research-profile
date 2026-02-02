@@ -16,13 +16,8 @@ st.title("Profile")
 st.markdown("### About")
 
 st.write("""
-I work on prediction problems using machine learning. My approach is to test multiple models instead 
-of picking one upfront, use proper validation splits so the model doesn't just memorize the training 
-data, and actually deploy what I build rather than leaving it as a notebook.
-
-For postgraduate study I want to focus on mining applications of machine learning. My undergraduate 
-project was on flight delay prediction using ensemble methods, and I want to apply the same approach 
-to mining problems.
+I work on machine learning applications with a focus on prediction problems. My undergraduate project involved flight delay prediction using ensemble methods, which developed my skills in model validation and deployment.
+I'm pursuing postgraduate study to apply machine learning techniques to the mining sector, where I see significant opportunities for predictive modeling in areas such as resource exploration and operational optimization.
 """)
 
 st.markdown("---")
@@ -123,3 +118,4 @@ I'm interested in ML for mining operations. Some areas I'm considering:
 In terms of approach, I care about testing multiple models properly, using time-based validation 
 when working with time series data, and building things that can actually be used.
 """)
+
